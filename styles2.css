@@ -1,0 +1,268 @@
+@font-face {
+    font-family: Comfortaa;
+    src: url(Fuentes/Comfortaa-VariableFont_wght.ttf);
+}
+
+@font-face {
+    font-family: Fredoka;
+    src: url(Fuentes/Fredoka-VariableFont_wdth\,wght.ttf);
+}
+
+@font-face {
+    font-family: Spiderman;
+    src: url(Fuentes/The\ Amazing\ Spider-Man.ttf);
+}
+
+@font-face {
+    font-family: Naruto;
+    src: url(Fuentes/njnaruto.ttf);
+}
+
+html{
+    background: rgb(30, 30, 30);
+    color: white;
+}
+
+header{
+    /* color: white; */
+    width: 100%;
+    position: sticky;
+    top: 0px;
+    z-index: 100;
+}
+
+nav{
+    background: rgb(59,59,59);
+    /* background: linear-gradient(150deg,rgba(8, 97, 175, 1) 0%,rgba(109, 255, 131, 1)100%); */
+    border-radius: 30px;
+    box-shadow: 0px 15px 20px 0px rgba(70, 87, 105, 0.4);
+}
+
+nav ul{
+    list-style: none;
+    overflow: hidden;
+}
+
+nav ul li{
+    float: left;
+    font-family: Naruto;
+    font-size: 20px;
+    margin-left: 500px;
+    align-items: center;
+
+    padding-left: 15px;
+}
+
+nav ul li a{
+    display: block;
+    color: rgb(209, 204, 32);
+    text-decoration: none;
+    
+    padding-top: 10px;
+    padding-bottom: 10px;
+    padding-right: 15px;
+}
+
+nav ul li:hover{
+    border: solid 2px rgb(0, 195, 255);
+    border-radius: 30px;
+}
+
+nav ul li img{
+    width: 30px;
+    height: 30px;
+    margin-right: 10px;
+}
+
+.li {
+    display: inline-flex;
+    -webkit-transform: perspective(1px) translateZ(0);
+    transform: perspective(1px) translateZ(0);
+    box-shadow: 0 0 1px rgba(0, 0, 0, 0);
+    -webkit-transition-duration: 0.3s;
+    transition-duration: 0.3s;
+}
+
+.li .icon{
+    -webkit-transform: translateZ(0);
+    transform: translateZ(0);
+    -webkit-transition-duration: 0.3s;
+    transition-duration: 0.3s;
+    -webkit-transition-property: transform;
+    transition-property: transform;
+    -webkit-transition-timing-function: ease-out;
+    transition-timing-function: ease-out;
+}
+
+.li:hover .icon, .li:focus .icon, .li:active .icon {
+    -webkit-transform: scale(1.5);
+    transform: scale(1.5);
+    -webkit-transition-timing-function: cubic-bezier(0.47, 2.02, 0.31, -0.36);
+    transition-timing-function: cubic-bezier(0.47, 2.02, 0.31, -0.36);
+}
+
+.container{
+    display: flex;
+    flex-wrap: wrap;
+    gap: 24px;
+}
+
+.card{
+    /* flex: 0 0 0px; */
+    width: 200px;
+    height: 200px;
+    border-radius: 150px;
+}
+
+.uno{
+    /* border: solid 2px red; */
+    width: 500px;
+    height: 200px;
+    rotate: 20deg;
+    padding: 25px;
+    display: inline-flex;
+
+    /* margin: 50px; */
+}
+
+.dos{
+    /* border: solid 2px green; */
+    width: 500px;
+    height: 200px;
+    rotate: -10deg;
+    padding: 25px;
+    display: inline-flex;
+
+    /* margin: 50px; */
+}
+
+.tres{
+    /* border: solid 2px yellow; */
+    width: 500px;
+    height: 280px;
+    rotate: -25deg;
+    padding: 25px;
+    display: grid;
+    place-items: center;
+
+    /* margin: 50px; */
+}
+
+.cuatro{
+    /* border: solid 2px purple; */
+    width: 500px;
+    height: 280px;
+    rotate: 20deg;
+    padding: 25px;
+    display: grid;
+    place-items: center;
+
+    /* margin: 50px; */
+}
+
+.cite1{
+    /* border: solid 2px lime; */
+    font-family: Fredoka;
+    font-size: 20px;
+    font-weight: 200;
+    text-align: center;
+
+    margin-top: 70px;
+    margin-right: 20px;
+}
+
+.cite2{
+    /* border: solid 2px blue; */
+    font-family: Fredoka;
+    font-size: 20px;
+    font-weight: 200;
+    text-align: center;
+
+    margin-top: 70px;
+    margin-left: 20px;
+}
+
+.cite3{
+    /* border: solid 2px orange; */
+    font-family: Fredoka;
+    font-size: 20px;
+    font-weight: 200;
+    text-align: center;
+}
+
+.cite4{
+    /* border: solid 2px black; */
+    font-family: Fredoka;
+    font-size: 20px;
+    font-weight: 200;
+    text-align: center;
+}
+
+@media (max-width:424px){
+
+html{
+    margin-left: 10%;
+}
+
+nav ul li{
+    margin-left: 20%;
+    font-size: 16px;
+}
+
+nav ul li img{
+    width: 25px;
+    height: 25px;
+}
+
+.card{
+    display: none;
+}
+
+}
+
+@media (min-width:424px) and (max-width:767px){
+
+nav ul li{
+    margin-left: 20%;
+    font-size: 16px;
+}
+
+nav ul li img{
+    width: 25px;
+    height: 25px;
+}
+
+.container{
+    margin-left: 13.5%;
+}
+
+.card{
+    display: none;
+}
+
+}
+
+@media (min-width:768px) and (max-width:1023px){
+
+nav ul li{
+    margin-left: 20%;
+    font-size: 18px;
+}
+    
+nav ul li img{
+    width: 27px;
+    height: 27px;
+}
+
+.container{
+    margin-left: 13.5%;
+}
+
+.tres{
+    margin-bottom: 5%;
+}
+
+.cuatro{
+    margin-top: 5%;
+}
+}
